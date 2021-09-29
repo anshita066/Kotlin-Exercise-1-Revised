@@ -1,0 +1,13 @@
+fun main(args: Array<String>) {
+ 
+    var str = "My name is Anshita"
+    
+    println(str)
+    
+    val oldValue = "Anshita"
+    val newValue = "Anshita Sharma"
+ 
+    val output = str.replace(oldValue, newValue, ignoreCase = true)
+ 
+    print(output)
+}
