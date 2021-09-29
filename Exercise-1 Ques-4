@@ -1,0 +1,25 @@
+fun main(){
+        var str:String = "Anshit@ i$ my n@me! Hello123";
+        var upper:Int = 0
+        var lower:Int = 0
+        var number:Int = 0 
+        var special:Int = 0;
+ 
+        for(i in 0..str.length-1)
+        {
+            var ch:Char = str.get(i);
+            if (ch >= 'A' && ch <= 'Z')
+                upper++;
+            else if (ch >= 'a' && ch <= 'z')
+                lower++;
+            else if (ch >= '0' && ch <= '9')
+                number++;
+            else
+                special++;
+        }
+ 
+        println("Lower case letters : " + lower);
+        println("Upper case letters : " + upper);
+        println("Number : " + number);
+        println("Special characters : " + special);
+    }
